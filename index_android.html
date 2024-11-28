@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+  <title>Sensor data</title>
+</head>
+
+<body class="bg-light">
+  
+  <!-- Main Content -->
+  <div class="py-5 bg-dark">
+    <div class="text-center text-light col-sm-12">
+      <h1>Sensor data</h1>
+      <div class="col-sm-4 mt-4 mx-auto">
+        <button type="button" class="btn btn-primary btn-lg" id="ble-connect-button">Connect</button>
+        <button type="button" class="btn btn-danger btn-lg" id="ble-disconnect-button"
+          style="display:none;">Disconnect</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <br>
+    <div class="row">
+      <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 mx-auto">
+        <table id="table-recvdata" class="table table-hover">
+          <tbody>
+            <tr id="deviceNameTable">
+              <th>Device Name</th>
+              <th id="textDeviceName"></th>
+            </tr>
+            <tr>
+              <th>Unique Name</th>
+              <th id="textUniqueName"></th>
+            </tr>
+            <tr>
+              <th>日時</th>
+              <th id="textDateTime"></th>
+            </tr>
+            <tr>
+              <th>Sensor1[pF]</th>
+              <th id="textVal1"></th>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <hr>
+
+
+  </div>
+
+
+  <a style="display:none;" id="downloader" href="#"></a>
+
+
+  <script src="chart.js"></script>
+  <script type="text/javascript" src="leafony.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
